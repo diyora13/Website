@@ -9,17 +9,78 @@
 <body>
 
   <header>
-    <a href="../index.html" class="back-link">← Back to Home</a>
+    <nav class="navbar">
+      <a href="../index.html" class="back-link">← Home</a>
+      <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <h1 class="page-title">Krish</h1>
-    <p class="placeholder">This is Krish's page. Edit this file to add your content!</p>
 
-    <!-- ✏️ Add your content below this line -->
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>Hi, I'm Krish 👋</h1>
+      <p>Aspiring Web Developer | Learning & Building Cool Stuff</p>
+      <button onclick="sayHello()">Click Me</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a student passionate about web development. I enjoy creating websites,
+        learning new technologies, and improving my skills every day.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase my work.</p>
+      </div>
+      <div class="project-card">
+        <h3>Todo App</h3>
+        <p>A simple app to manage daily tasks.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: krish@example.com</p>
+      <p>Phone: +91 12345 67890</p>
+    </section>
 
   </main>
 
+  <footer>
+    <p>© 2026 Krish. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
+
+  <!-- SIMPLE SCRIPT -->
+  <script>
+    function sayHello() {
+      alert("Hello Krish! 🚀 Keep building!");
+    }
+  </script>
+
 </body>
 </html>
