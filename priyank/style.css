@@ -1,6 +1,5 @@
 /* =============================================
-   Priyank's Styles
-   Add your styles below!
+   Priyank's Styles (Updated)
    ============================================= */
 
 * {
@@ -12,10 +11,11 @@
 body {
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   min-height: 100vh;
-  background: #f0f0f5;
+  background: linear-gradient(135deg, #f0f0f5, #e6e6ff);
   color: #222;
 }
 
+/* Header */
 header {
   padding: 20px 32px;
   background: #fff;
@@ -27,31 +27,54 @@ header {
   color: #6c63ff;
   font-weight: 600;
   font-size: 0.95rem;
-  transition: opacity 0.2s;
+  transition: all 0.2s;
 }
 
 .back-link:hover {
   opacity: 0.7;
+  transform: translateX(-3px);
 }
 
+/* Main Layout (Center like index page) */
 main {
   max-width: 800px;
-  margin: 60px auto;
-  padding: 0 24px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
   text-align: center;
 }
 
+/* Title */
 .page-title {
   font-size: 3rem;
   font-weight: 800;
   color: #6c63ff;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
+/* Description Card */
+.description {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  max-width: 700px;
+}
+
+/* Text */
+.desc-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Remove old placeholder */
 .placeholder {
-  color: #888;
-  font-size: 1.1rem;
-  margin-bottom: 40px;
+  display: none;
 }
-
-/* ✏️ Write your own styles below */
