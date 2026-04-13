@@ -1,47 +1,112 @@
-/* =============================================
-   Vishvas's Styles
-   Add your styles below!
-   ============================================= */
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  min-height: 100vh;
-  background: #f0f0f5;
-  color: #222;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
+/* Body */
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  padding: 20px 32px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 15px 30px;
+  background: #111;
 }
 
 .back-link {
+  color: #fff;
   text-decoration: none;
-  color: #a55eea;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: opacity 0.2s;
+  font-size: 16px;
 }
 
-.back-link:hover { opacity: 0.7; }
+.back-link:hover {
+  text-decoration: underline;
+}
 
+/* Main */
 main {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 24px;
-  text-align: center;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
 }
 
+/* Title */
 .page-title {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #a55eea;
-  margin-bottom: 16px;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-.placeholder { color: #888; font-size: 1.1rem; margin-bottom: 40px; }
+.placeholder {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+}
 
-/* ✏️ Write your own styles below */
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Skills */
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  background: #007bff;
+  color: white;
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Projects */
+.project-card {
+  background: white;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact */
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: white;
+  margin-top: 40px;
+}
