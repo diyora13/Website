@@ -38,7 +38,11 @@ main {
 .page-title {
   font-size: 3rem;
   font-weight: 800;
-  color: #26de81;
+  background: linear-gradient(to right, red, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
 }
 
