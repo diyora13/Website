@@ -3,23 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Krish</title>
+  <title>Krish | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- NAVBAR -->
   <header>
-    <a href="../index.html" class="back-link">← Back to Home</a>
+    <nav class="navbar">
+      <h2 class="logo">Krish</h2>
+      <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <h1 class="page-title">Krish</h1>
-    <p class="placeholder">This is Krish's page. Edit this file to add your content!</p>
 
-    <!-- ✏️ Add your content below this line -->
+    <!-- HERO -->
+    <section class="hero">
+      <h1 id="typing"></h1>
+      <p>I build modern and cool websites 🚀</p>
+      <button onclick="sayHello()">Say Hi</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm Krish, a passionate beginner web developer learning HTML, CSS, and JavaScript.
+        I love building creative and responsive websites.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern personal portfolio.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Todo App</h3>
+        <p>Task management web app.</p>
+      </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: krish@example.com</p>
+    </section>
 
   </main>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>© 2026 Krish</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Button click
+    function sayHello() {
+      alert("Hey Krish! Keep going 🔥");
+    }
+
+    // Typing effect
+    const text = "Hi, I'm Krish 👋";
+    let i = 0;
+    function typingEffect() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typingEffect, 80);
+      }
+    }
+    typingEffect();
+  </script>
+
 </body>
 </html>

@@ -1,47 +1,124 @@
-/* =============================================
-   Krish's Styles
-   Add your styles below!
-   ============================================= */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
+/* BODY */
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  min-height: 100vh;
-  background: #f0f0f5;
-  color: #222;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: #e2e8f0;
 }
 
-header {
-  padding: 20px 32px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  backdrop-filter: blur(10px);
+  background: rgba(2, 6, 23, 0.7);
+  position: sticky;
+  top: 0;
 }
 
-.back-link {
+.logo {
+  color: #38bdf8;
+}
+
+.navbar a {
+  color: #38bdf8;
+  margin-left: 15px;
   text-decoration: none;
-  color: #43b89c;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: opacity 0.2s;
+  position: relative;
 }
 
-.back-link:hover { opacity: 0.7; }
+.navbar a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #facc15;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.3s;
+}
 
-main {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 24px;
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
+.hero {
   text-align: center;
+  padding: 100px 20px;
 }
 
-.page-title {
+.hero h1 {
   font-size: 3rem;
-  font-weight: 800;
-  color: #43b89c;
-  margin-bottom: 16px;
+  background: linear-gradient(90deg, #38bdf8, #facc15);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.placeholder { color: #888; font-size: 1.1rem; margin-bottom: 40px; }
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background: #38bdf8;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-/* ✏️ Write your own styles below */
+.hero button:hover {
+  transform: scale(1.1);
+}
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* HEADINGS */
+h2 {
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+/* PROJECTS */
+.project-card {
+  background: rgba(30, 41, 59, 0.5);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* SKILLS */
+.skills-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #38bdf8;
+  color: #020617;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
